@@ -58,9 +58,21 @@ def select(function_code):
         print("Unknown Option")
         return True
 
-#def test():
-#Run Test
-#test()
+def test():
+    create("purple sox")
+    create("red cloak")
+
+    print(list_all_items())
+    print(read(0))
+    print(read(1))
+
+    update(0, "purple socks")
+
+    print(list_all_items())
+    destroy(1)
+
+    print(list_all_items())
+test()
 
 running = True
 while running:
